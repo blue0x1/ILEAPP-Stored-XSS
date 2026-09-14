@@ -1,17 +1,17 @@
 # ILEAPP Stored XSS
 
-
 ```
-# Exploit Title: iLEAPP Stored XSS in SMS/iMessage Chat HTML Report
-# Date: 2026-09-14
-# Exploit Author: Chokri Hammedi
-# Software: https://github.com/abrignoni/iLEAPP
-# Vendor: https://github.com/abrignoni
-# Version: v2026.4.0
-# Tested on: Linux
-# Vulnerability Type: Stored Cross-Site Scripting
-# CWE: CWE-79
 
+ Exploit Title: iLEAPP Stored XSS in SMS/iMessage Chat HTML Report
+ Date: 2026-09-14
+ Exploit Author: Chokri Hammedi
+ Software: https://github.com/abrignoni/iLEAPP
+ Vendor: https://github.com/abrignoni
+ Version: v2026.4.0
+ Tested on: Linux
+ Vulnerability Type: Stored Cross-Site Scripting
+ CWE: CWE-79
+```
 
 
 ## Description
@@ -27,9 +27,9 @@ This issue affects the SMS/iMessage chat rendering path, where evidence-derived 
 ## Proof of Concept
 
 Send or store the following SMS/iMessage payload on an iPhone:
-
+```
 <img src=x onerror=alert('iLEAPP_SMS_XSS_POC_2026_09_14')>
-
+```
 Then create an iPhone backup containing the message and process it with iLEAPP.
 
 
@@ -67,5 +67,7 @@ Potential impact includes:
 Untrusted evidence-derived SMS/iMessage content is inserted into the generated HTML chat report without proper escaping or safe DOM insertion.
 
 Message content should be treated as text, not HTML.
-```
+
+<br>
+
 <img width="1188" height="935" alt="image" src="https://github.com/user-attachments/assets/7b464d8d-f9bb-4bd6-8260-4eae2140a96f" />
