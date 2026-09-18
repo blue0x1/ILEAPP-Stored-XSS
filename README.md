@@ -68,6 +68,11 @@ Untrusted evidence-derived SMS/iMessage content is inserted into the generated H
 
 Message content should be treated as text, not HTML.
 
+**Screenshots**: 
 <br>
 
+
+<img width="420" height="920" alt="image" src="https://github.com/user-attachments/assets/b617c756-48c3-42e8-857a-83411ed64f76" />
+<br>
+<br>
 <img width="1188" height="935" alt="image" src="https://github.com/user-attachments/assets/7b464d8d-f9bb-4bd6-8260-4eae2140a96f" />
